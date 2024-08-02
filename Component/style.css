@@ -1,0 +1,131 @@
+:root {
+    --step-icon-size-sm: 20px;
+    --step-icon-size-md: 30px;
+    --step-icon-size-lg: 40px;
+    --step-line-length-sm: 30px;
+    --step-line-length-md: 50px;
+    --step-line-length-lg: 70px;
+    --step-font-size-sm: 12px;
+    --step-font-size-md: 16px;
+    --step-font-size-lg: 20px;
+    --step-icon-size: var(--step-icon-size-md);
+    --step-line-length: var(--step-line-length-md);
+    --step-font-size: var(--step-font-size-md);
+  }
+  
+  .stepper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+  }
+  
+  .stepper-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .step {
+    display: flex;
+    align-items: center;
+  }
+  
+  .step-icon {
+    width: var(--step-icon-size);
+    height: var(--step-icon-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: var(--step-font-size);
+  }
+  
+  .step-line {
+    width: var(--step-line-length);
+    height: 2px;
+    margin: 0 10px;
+  }
+  
+  .stepper-sm .step-icon {
+    width: var(--step-icon-size-sm);
+    height: var(--step-icon-size-sm);
+    font-size: var(--step-font-size-sm);
+  }
+  
+  .stepper-sm .step-line {
+    width: var(--step-line-length-sm);
+  }
+  
+  .stepper-md .step-icon {
+    width: var(--step-icon-size-md);
+    height: var(--step-icon-size-md);
+    font-size: var(--step-font-size-md);
+  }
+  
+  .stepper-md .step-line {
+    width: var(--step-line-length-md);
+  }
+  
+  .stepper-lg .step-icon {
+    width: var(--step-icon-size-lg);
+    height: var(--step-icon-size-lg);
+    font-size: var(--step-font-size-lg);
+  }
+  
+  .stepper-lg .step-line {
+    width: var(--step-line-length-lg);
+  }
+  
+  .stepper-custom .step-icon {
+    width: var(--step-icon-size);
+    height: var(--step-icon-size);
+    font-size: var(--step-font-size);
+  }
+  
+  .stepper-custom .step-line {
+    width: var(--step-line-length);
+  }
+  
+  .step.active .step-icon {
+    background-color: var(--active-color, #4caf50);
+  }
+  
+  .stepper-content {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .stepper-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+  }
+  
+  .stepper-buttons button {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .stepper-buttons button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  /* Add animation or transition for active steps */
+.step.active .step-icon {
+    background-color: var(--active-color, #4caf50);
+    animation: pulse 0.5s ease infinite alternate; /* Example animation */
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+  
+  

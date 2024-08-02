@@ -1,0 +1,19 @@
+{
+  "name": "advance-stepper",
+  "version": "1.0.0",
+  "description": "steppers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "steppers",
+    "React",
+    "Steppers",
+    "React Steppers",
+    "React Stepper",
+    "Advance React Steppers"
+  ],
+  "author": "Farooque Shaikh",
+  "license": "ISC"
+}
